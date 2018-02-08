@@ -1,0 +1,56 @@
+layout-1.css
+/* import = insert other stylesheet here, always import on the top line(s) of your file */
+
+@import'main.css';
+
+
+/* layout 1 specific styles*/
+
+main {
+	width:900px;
+	margin: 0 auto;
+}
+
+article{
+	width: 600px;
+	float: left;
+	padding:10 px;
+}
+
+aside{
+	width: 300px;
+	float: left;
+	min-height: 440px;
+}
+
+section{
+	padding:20px;
+}
+
+ul.vertical-nav {
+	list-style-type:none;
+	padding-left:0;
+	
+}
+
+/*
+aside nav ul {
+
+}*/
+
+.vertical-nav li a{
+	color: #111;
+	text-decoration: none;
+	display: block;
+	padding: 20px;
+	border-bottom: 2px solid #333;
+	background-color: #ccc;
+	text-align: center;
+}
+
+
+.vertical-nav li a:hover {
+	color: #ccc;
+	background-color: #111;
+}
+
