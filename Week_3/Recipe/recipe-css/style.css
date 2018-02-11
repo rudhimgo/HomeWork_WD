@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+html,
+body{
+	margin:0;
+}
+
+html {
+	background: url(../img/bg.jpg) no-repeat center center fixed;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+}
+
+
+
+
+/*POSITIONING*/
+
+
+	.ingredients {
+		border: 5px solid red;
+		width:900px;
+		height:300px;
+		position: absolute;
+		top: 750px;
+		right: 150px;
+		/*left: 0px;
+		bottom: 0px;*/
+	}
+
+	.instructions {
+		border: 5px solid red;
+		width:900px;
+		height:400px;
+		position: absolute;
+		top: 1100px;
+		right: 150px;
+		/*left: 0px;
+		bottom: 0px;*/
+	}
+
+
+	/*HEADERS AND TEXT STYLES*/
+
+header img{
+	float: left;
+}
+
+header {
+	width: 80%;
+	padding: 0 10%; 
+	height: 50px;
+	position: fixed;
+	background: url(../img/cheap_diagonal_fabric.png);
+	z-index:10;
+}
+
+
+header h1{
+	display: inline-block;
+	color: #333;
+	font-family: 'Oswald', cursive;
+	margin: 0;
+	padding: 0;
+}
+
+body ul li{
+	font-family: 'Oswald', cursive;
+	text-align: center;
+	list-style-type: none;
+}
+
+body p{
+	font-family: 'Oswald', cursive;
+	text-align: center;
+}
+
+body h2{
+	text-align: center;
+	font-family: 'Oswald', cursive;
+
+}
+
+body img{
+	
+}
+
+/*NAV BAR*/
+
+nav {
+	float: right;
+}
+
+nav ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: rgba(40,40,40,0.1);
+
+}
+
+
+nav li {
+	font-family: 'Oswald', cursive;
+	height: 50px;
+	line-height: 50px;
+	width: 120px;
+	display: inline-block;
+}
+
+nav a{
+	text-decoration: none;
+	color: #444;
+	display: block;
+	text-align:center;
+	transition: all 1s;
+}
+
+nav a:hover{
+	background-color: rgba(10,10,10,0.5);
+	color: white;
+}
+
+/*FOOTER NAV BAR*/
+
+/*.footer{
+
+nav ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: rgba(40,40,40,0.1);
+
+}
+
+
+nav li {
+	font-family: 'Oswald', cursive;
+	height: 50px;
+	line-height: 50px;
+	width: 120px;
+	display: inline-block;
+}
+
+nav a{
+	text-decoration: none;
+	color: #444;
+	display: block;
+	text-align:center;
+	transition: all 1s;
+}
+
+nav a:hover{
+	background-color: rgba(10,10,10,0.5);
+	color: white;
+}
+
+}*/
+
+
+
+
+
+
+/*div { 
+	min-height: 20px;
+	overflow: visible;
+	border-color: red;
+	border-width: 2px;
+	border-style: solid;
+
+	border: 2px, solid, red;
+	text-align: center;
+
+	}
+
+	.container{
+		border-color: red;
+		border-width: 2px;
+		border-style: solid;
+
+		border: 10px solid red;
+		width:  900px;
+		height: 50px;
+		margin:0 auto;
+
+	}
+
+
+	.thumbnail{
+		border: 1px solid red;
+		width: 298px;
+		height: 50px;
+		float: left;
+		font-family: 'Oswald', cursive;
+
+
+	}
+	.clearfix::after{
+		content:"";
+		clear: both;
+		display: block;
+
+	}*/
+

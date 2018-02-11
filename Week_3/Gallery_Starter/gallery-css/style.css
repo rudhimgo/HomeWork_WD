@@ -1,4 +1,4 @@
-@import url('https://fonts.google.com/specimen/Kaushan+Script?selection.family=Kaushan+Script');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
 
 /*font-family: 'Kaushan Script, cursive'*/
 html,
@@ -68,7 +68,7 @@ header {
 header h1{
 	display: inline-block;
 	color: #333;
-	font-family: 'Kaushan Script, cursive'
+	font-family: 'Kaushan Script', cursive
 	margin: 0;
 	padding: 0;
 
@@ -89,7 +89,7 @@ nav ul{
 
 
 nav li {
-	font-family: 'Kaushan Script, cursive'
+	font-family: 'Kaushan Script', cursive
 	height: 50px;
 	line-height: 50px;
 	width: 120px;
