@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.google.com/specimen/Kaushan+Script?selection.family=Kaushan+Script');
 
 /*font-family: 'Kaushan Script, cursive'*/
 html,
@@ -20,6 +20,7 @@ html {
 .container{
 	width: 900px;
 	margin: 0 auto;
+	padding-top: 75px;
 
 }
 
@@ -108,6 +109,87 @@ nav a:hover{
 	background-color: rgba(10,10,10,0.5);
 	color: white;
 }
+
+
+/*Transforms and Transitions*/
+
+
+.scaleUp{
+	transform: scale(1.2);
+	z-index: 100;
+}
+
+.scaleX{
+	transform: scale(2,1);
+}
+
+.scaleY{
+	transform: scale(1,2);
+}
+
+.skewX{
+	transform: skewX(20deg);
+}
+
+.skewY{
+	transform: skewY(20deg);
+}
+
+.skewBoth{
+	transform: skew(10deg, 30deg);
+}
+
+.rotX{
+ 	transform: rotateX(120deg);
+}
+
+.rotY{
+	transform: rotateY(120deg);
+}
+
+.rotZ{
+	transform: rotateZ(120deg) rotateY(100deg);
+}
+
+.rotate-left{
+	transform: rotate(-10deg);
+	transition: all 5s ease;
+}
+
+.rotate-left:hover{
+	transform: rotate(10deg);
+}
+
+.skew-hover{
+	transform: skew(10deg);
+}
+
+.skew-hover:hover{
+	transform: skew(-10deg);
+	transition: all 5s ease;
+}
+
+.scale-hover{
+	transform: scale(1,1);
+}
+
+.scale-hover:hover{
+	transform: scale(1.5,1.5);
+	transition: all 5s ease;
+
+}
+
+.color-swap{
+	filter: grayscale(100%);
+	transition: all 5s ease;
+}
+
+.color-swap:hover{
+	filter: grayscale(0%)
+}
+
+
+
 
 
 
