@@ -15,7 +15,8 @@ style.css
 			content:'';
 			visibility: hidden;
 		}
-	
+
+/* ------------------------------Desktop design pattern--------------------------------------*/
 
 
 /*--------------------------------------IMAGES-------------------------------------------------*/
@@ -25,53 +26,44 @@ style.css
 
 		}
 
-		.container {
-			margin:auto;
-			width: 100%;
+		.container{
+			width: 1024px;
+			margin: 0 auto;
+			/*font-size: 1rem;*/
+			padding-top: 30px;
+
 		}
 
-
-		.thumbnail {
+		.thumb {
 			width: 30%;
-			margin: 1.0%;
+			margin: 1.5%;
 			display: inline-block;
 		}
 
 
-		.thumbnail img{
+		.thumb img{
 			width: 100%;
 			height: auto;
-			border: 10px solid black;
+			border: 10px solid white;
+			/*	border-bottom: 45px solid #ccc;*/
+			border-bottom-width: 50px;
 			/* x | y | blur| spread| color*/
 			-webkit-box-shadow: 3px 3px 3px 3px rbga(10,10,10,0.5);
 			-moz-box-shadow: 3px 3px 3px 3px rbga(10,10,10,0.5);;
 			box-shadow: 3px 3px 3px 3px rbga(10,10,10,0.5);
 		}
-
-		.thumbnail hover:hover{
-			filter: grayscale(100%);
-			transition: all 5s ease;
-		}
-
-		.thumbnail a{
-			display: block;
+		
+		.thumb p {
+			position: absolute;
+			padding-left: 100px;
+			padding-top: 410px;
 			text-align: center;
-/*			padding: 10px 40px;*/
 			color: black;
-			text-decoration: none;
 			font-family: 'IBM Plex Mono', monospace;
 
 		}
 
-		.thumbnail a:hover{
-			background-color: black;
-			color: white;
-
-		}
-
-
-
-/*------------------------------------NAV BAR---------------------------------------*/
+		/*------------------------------------NAV BAR---------------------------------------*/
 
 		header {
 			width: 100%;
@@ -100,13 +92,14 @@ style.css
 
 		nav ul li{
 			display: inline-block;
+
 		}
 
 		nav a{
 			display: block;
 			text-align: center;
 			padding: 10px 40px;
-			color: white;
+			color: gray;
 			text-decoration: none;
 			font-family: 'IBM Plex Mono', monospace;
 
@@ -117,6 +110,85 @@ style.css
 			color: black;
 
 		}
+
+
+
+/*-------------------------------------------IMAGE TRANSFORMATIONS--------------------------------*/
+
+		.scale-hover{
+			transform: scale(1,1);
+		}
+
+		.scale-hover:hover{
+			transform: scale(1.1,1.1);
+			transition: all 1s ease;
+		}
+		
+
+/*--------------------------------------------POP-UPS-------------------------------------------*/
+
+/* Popup container - can be anything you want */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: 'IBM Plex Mono', monospace;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    font-family: 'IBM Plex Mono', monospace;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: -200%;
+    left: 50%;
+    margin-left: -80px;
+
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
 
 /*-----------------------------------MEDIA QUERIES------------------------------------------------*/
 

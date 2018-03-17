@@ -176,7 +176,6 @@ nav a:hover{
 .scale-hover:hover{
 	transform: scale(1.5,1.5);
 	transition: all 5s ease;
-
 }
 
 .color-swap{
