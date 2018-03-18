@@ -41,7 +41,7 @@ style.css
 		.thumbnail img{
 			width: 100%;
 			height: auto;
-			border: 10px solid black;
+			border: 5px solid black;
 			/* x | y | blur| spread| color*/
 			-webkit-box-shadow: 3px 3px 3px 3px rbga(10,10,10,0.5);
 			-moz-box-shadow: 3px 3px 3px 3px rbga(10,10,10,0.5);;
@@ -57,6 +57,7 @@ style.css
 			display: block;
 			text-align: center;
 /*			padding: 10px 40px;*/
+			background-color:white;
 			color: black;
 			text-decoration: none;
 			font-family: 'IBM Plex Mono', monospace;
