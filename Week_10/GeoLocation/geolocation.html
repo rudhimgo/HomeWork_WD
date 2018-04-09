@@ -1,0 +1,61 @@
+<html>
+<head>
+	<title>HTMLS 5 GEOLOCATION</title>
+</head>
+<body onload= "getLocation();">
+	<div id="location"></div>
+
+	<script type= "text/javascript">
+		document.addEventListener('DOMContentLoaded', getLocation);
+
+
+		function getLocation (){
+			//conditional to check if the browser can support geoLocation
+			//we do this by checking if the navigator ovject exists
+
+			if (navigator.geolocation){
+				// do this code if we have access to geolocation 
+				//console.log(navigator.geolocation);
+				navigator.geolocation.getCurrentPosition(setPosition);
+			} else {
+				alert('Geolocation is not supported by your browser');
+			}
+
+			function setPosition(position) {
+				console.log(position.coords.latitude);
+				console.log(position.coords.longitude);
+
+				var lat = position.coords.latitude;
+				var lon = position.coords.longitude;
+
+				var loc = document.getElementById('location');
+				//loc.innerHTML = 'Latitude: ' + lat + "Longitude:" + lon;	
+
+				var latP = document.createElement('P');
+				var lonT = document.createElement('P');
+
+				var latT = document.createTextNode('Latitude' + lat);
+				var lonT = document.createTextNode('Longitude' + lon);
+
+
+				latP.appendChild(latT);
+				lonP.appendChild(lonT);
+
+				loc.appendChild(latP);
+				loc.appendChild(lonP);
+			}
+
+
+		}
+
+
+
+
+
+
+
+
+	</script>
+
+	</body>
+	</html>

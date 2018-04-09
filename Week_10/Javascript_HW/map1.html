@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+      #map {
+        height: 100%;
+      }
+      /*Makes the sample page fill the window. */
+      html, body {
+        height: 90%;
+        margin: 0;
+        padding-top: 0px;
+      }
+
+      body{
+      	width: 100%;
+      	text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+  	<h1>Go Here!</h1>
+
+  	<a href = "index.html">Back to start</a>
+    <div id="map"></div>
+    <script>
+      var map;
+      var lat;
+      var lng;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          // center: {lat: 40.69350300000001, lng: -73.98634510000001},
+          center: {lat, lng},
+          zoom: 18
+        });
+      }
+
+//tandon
+
+      if(rn = 0){
+			var lat = 40.69350300000001;
+			var lng = -73.98634510000001;
+		}
+//santa cruz
+
+      if(rn = 1){
+			var lat = 36.964451;
+			var lng = -122.016388;
+		}
+
+//statue of libery
+      if(rn = 2){
+			var lat = 40.6892;
+			var lng = -74.0445;
+		}
+
+//montreal
+
+      if(rn = 3){
+			var lat = 45.5017;
+			var lng = -73.5673;
+		}
+
+//wsp
+      if(rn = 4){
+			var lat = 40.7308;
+			var lng = -73.9973;
+		}
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6hzR4EyieNpp6swKAm1ec3PGsQM8jvw4&callback=initMap"
+    async defer></script>
+
+  </body>
+</html>

@@ -1,0 +1,64 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+       #map {
+        height: 800px;
+        width: 100%;
+       }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+    	//global and empty to start but we can share global variables between/across functions
+      var myLocation= {lat: 0, lng: 0};
+      var map;
+
+
+
+      function getLocation (){
+			//conditional to check if the browser can support geoLocation
+			//we do this by checking if the navigator ovject exists
+
+		if (navigator.geolocation){
+			// do this code if we have access to geolocation 
+			//console.log(navigator.geolocation);
+			navigator.geolocation.getCurrentPosition(setPosition);
+		} else {
+			alert('Geolocation is not supported by your browser');
+		}
+
+	}
+
+
+	function setPosition(position) {
+				var lat = position.coords.latitude;
+				var lng = position.coords.longitude;
+
+		//override out global myLocation variable with my actual location
+
+		myLocation.lat = position.coords.latitude;
+		myLocation.lng = position.coords.longitude;
+		initMap();
+	}
+
+      function initMap() {
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: myLocation
+        });
+        var marker = new google.maps.Marker({
+          position: myLocation,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6hzR4EyieNpp6swKAm1ec3PGsQM8jvw4&callback=getLocation">
+    </script>
+  </body>
+</html>

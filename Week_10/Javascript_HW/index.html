@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+
+     <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+
+<style type = "text/css" media="screen">
+
+      /*Makes the sample page fill the window. */
+      html, body {
+        height: 90%;
+        margin: 0;
+        padding-top: 0px;
+      }
+
+      body{
+      	width: 100%;
+      	text-align: center;
+      }
+
+
+</style>
+
+    <title>Random Map</title>
+    <script>
+    		var maps = ["one","two", "three", "four","five"];
+
+
+
+    		for(var i=0; i < maps.length; i++) {
+			console.log(i, maps[i]);
+			maps[randomNumber(maps.length-1)];
+		}
+
+			function randomNumber(n){
+			var rn = Math.round(n * Math.random());
+			console.log(rn);
+		}
+
+
+		// console.log(randomNumber(4));
+		// console.log(maps[randomNumber(maps.length-1)]);
+
+		// if(rn = 0){
+		// 	var map = "map1.html";
+		// }
+
+
+		// if(rn = 1){
+		// 	var map = "map2.html";
+		// }
+
+
+		// if(rn = 2){
+		// 	var map = "map3.html";
+		// }
+
+
+		// if(rn = 3){
+		// 	var map = "map4.html";
+		// }
+
+
+		// if(rn = 4){
+		// 	var map = "map5.html";
+		// }
+
+    </script>
+
+  </head>
+  <body>
+
+	<p>Click</p> 
+
+	<a href="map1.html">Here</a>
+
+<!-- 	<button onclick="var map">here</button> -->
+
+	<p> to get a random suggestion!</p>
+
+
+</body>
+</html>
+
+	
+ 
+
+
+
+
+
+
+
+
+
+
+
+
